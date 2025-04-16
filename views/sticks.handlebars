@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+{{#each sticks}}
+  <div class="stick-card">
+    <h2>{{name}}</h2>
+    <p><strong>Length:</strong> {{length}} cm</p>
+    <p><strong>Category:</strong> {{category}}</p>
+    <p><strong>In Stock:</strong> {{#if inStock}}<span style="color: green;">In stock</span>{{else}}<span style="color: red;">Out of stock</span>{{/if}}</p>
+    <p><strong>Release Date:</strong> {{releaseDate}}</p>
+    <p><strong>Maker:</strong> {{maker.name}}, {{maker.country}}</p>
+  </div>
+{{/each}}
